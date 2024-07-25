@@ -67,7 +67,7 @@ function About(){
     </div>
       </div>
       </div>
-      <Logo/>
+     
       <Loader type='pacman'/>
     </>
   )
