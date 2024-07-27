@@ -5,7 +5,7 @@ import './index.scss'
 import Logo from '../Home/Logo'
 import { Link } from 'react-router-dom'
 
-const About= ()=>{
+function About(){
   
   const [letterClass, setLetterClass] = useState('text-animate')
 
