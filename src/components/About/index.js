@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import Logo from '../Home/Logo'
 import { Link } from 'react-router-dom'
 
 function About(){
@@ -68,8 +67,7 @@ function About(){
     </div>
       </div>
       </div>
-      <Logo/>
-      <Loader type='pacman'/>
+      
     </>
   )
 
