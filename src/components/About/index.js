@@ -4,7 +4,6 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Logo from '../Home/Logo'
 import { Link } from 'react-router-dom'
-import cv from '../../assets/images/resume.jpg'
 
 function About(){
   
@@ -25,11 +24,6 @@ function About(){
   const resumeContainerStyle = {
     marginTop: '20px',
   };
-  
-  const imageStyle = {
-    width: '100%',
-    maxWidth: '600px',
-  };
 
   return(
     <>
@@ -42,32 +36,39 @@ function About(){
          />
         </h1>
         <p>
-            I'm a very ambitious front-end developer looking for a role in an
+            I'm a very ambitious full-stack developer looking for a role in an
             established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>
           <p align="LEFT">
             I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            improving my chops.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            Skills I have are-
+            <ul>
+              <li>Web-Technologies: HTML, CSS, JavaScript</li>
+              <li>Frameworks: Node.js, Express.js, React.js</li>
+              <li>Languages: Java, Python</li>
+              <li>Databases: MySQL, MongoDB</li>
+              <li>Platforms: Eclipse, VS Code, Postman, Microsoft Office, Canva, Figma</li>
+            </ul>
           </p>
+          <p>To know more about me please have a look at my <b>Resume</b>.</p>
           <div>
       <button onClick={toggleResume} className= 'flat-button'>
-        {isVisible ? 'Hide Resume' : 'View Resume'}
-      </button>
-      {isVisible && (
         <div style={resumeContainerStyle}>
-          <img src={cv} alt="Resume" style={imageStyle} />
+          <a href="https://drive.google.com/file/d/1l6G4_CeFn_-zhSoq7IvY-mQSjlZ33Z2o/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+          <button className='flat-button'>Open Resume</button>
+          </a>
         </div>
-      )}
+      
+      </button>
+      
     </div>
       </div>
       </div>
-     
+      <Logo/>
       <Loader type='pacman'/>
     </>
   )
