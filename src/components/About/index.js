@@ -58,7 +58,7 @@ function About(){
           <div>
       <button onClick={toggleResume} className= 'flat-button'>
         <div style={resumeContainerStyle}>
-          <a href="https://drive.google.com/file/d/1l6G4_CeFn_-zhSoq7IvY-mQSjlZ33Z2o/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+          // <a href="https://drive.google.com/file/d/1l6G4_CeFn_-zhSoq7IvY-mQSjlZ33Z2o/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
           <button className='flat-button'>Open Resume</button>
           </a>
         </div>
