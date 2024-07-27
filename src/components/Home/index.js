@@ -41,17 +41,18 @@ const Home=()=> {
             <img src={LogoTitle} alt="developer"/>
             <AnimatedLetters letterClass={letterClass}
             strArray={nameArray}
-            idx={30}/>
+            idx={20}/>
             <br/>
             <AnimatedLetters letterClass={letterClass}
             strArray={jobArray}
-            idx={30}/>
+            idx={20}/>
+            <br/>
             <AnimatedLetters letterClass={letterClass}
             strArray={lifeArray}
-            idx={30}/>
+            idx={25}/>
             </h1>
             <h2>
-                Passionate about creating beautiful life for me and for all.
+            Passionate Computer Science student with a strong foundation in programming, problem-solving, and software development, eager to contribute innovative solutions and collaborate on cutting-edge projects
             </h2>
             <Link to="/contact" className='flat-button'>CONTACT ME</Link>
         </div>
